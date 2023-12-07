@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comp"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="mx.edu.uthermosillo.apps.javierantonioromobernal.computer.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_olviFragment"
+            app:destination="@id/olviFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_priFragment"
+            app:destination="@id/priFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="mx.edu.uthermosillo.apps.javierantonioromobernal.computer.RegistroFragment"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registroFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/olviFragment"
+        android:name="mx.edu.uthermosillo.apps.javierantonioromobernal.computer.OlviFragment"
+        android:label="fragment_olvi"
+        tools:layout="@layout/fragment_olvi" >
+        <action
+            android:id="@+id/action_olviFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="mx.edu.uthermosillo.apps.javierantonioromobernal.computer.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_infoFragment_to_priFragment"
+            app:destination="@id/priFragment" />
+        <action
+            android:id="@+id/action_infoFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_infoFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_infoFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/priFragment"
+        android:name="mx.edu.uthermosillo.apps.javierantonioromobernal.computer.PriFragment"
+        android:label="fragment_pri"
+        tools:layout="@layout/fragment_pri" >
+        <action
+            android:id="@+id/action_priFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_priFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_priFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_priFragment_to_priFragment"
+            app:destination="@id/priFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="mx.edu.uthermosillo.apps.javierantonioromobernal.computer.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" />
+    <action
+        android:id="@+id/action_listFragment_to_loginFragment"
+        app:destination="@id/loginFragment" />
+    <action
+        android:id="@+id/action_listFragment_to_infoFragment"
+        app:destination="@id/infoFragment" />
+    <action
+        android:id="@+id/action_listFragment_to_priFragment"
+        app:destination="@id/priFragment" />
+    <action
+        android:id="@+id/action_listFragment_to_listFragment"
+        app:destination="@id/listFragment" />
+</navigation>

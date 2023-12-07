@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black"  >#FF000000</color>
+    <color name="white"  >#FFFFFFFF</color>
+    <color name="morado" >#1C0140  </color>
+    <color name="purpura">#786CFA  </color>
+    <color name="violeta">#9681FA  </color>
+    <color name="aqua"   >#365D6B  </color>
+    <color name="cielo"  >#5284FF  </color>
+    <color name="agua"   >#6AD3F3  </color>
+    <color name="nube"   >#9FCDFF  </color>
+    <color name="azul"   >#A5E7CC  </color>
+    <color name="hielo"  >#F0F7FE  </color>
+
+</resources>
